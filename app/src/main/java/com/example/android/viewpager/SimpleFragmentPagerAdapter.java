@@ -31,15 +31,15 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new MondayFragment();
+            return MondayFragment.newInstance(R.string.monday);
         } else if (position == 1){
-            return new TuesdayFragment();
+            return TuesdayFragment.newInstance(R.string.tuesday);
         } else if (position == 2) {
-            return new WednesdayFragment();
+            return WednesdayFragment.newInstance(R.string.wednesday);
         } else if (position == 3) {
-            return new ThursdayFragment();
+            return ThursdayFragment.newInstance(R.string.thursday);
         } else {
-            return new FridayFragment();
+            return FridayFragment.newInstance(R.string.friday);
         }
     }
 
